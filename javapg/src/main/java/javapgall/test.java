@@ -1,19 +1,46 @@
 package javapgall;
 
+import java.util.Arrays;
+
+
+
+import java.util.Arrays;
+
+import java.util.Arrays;
+
 public class test {
+	public static void main(String[] args) {
+		
+	
+		   
+		        String names = "anil sandeep naga arun";
+		        String[] words = names.split(" ");
 
-    public static void main(String[] args) {
-        StringBuilder stringBuilder = new StringBuilder("ABCD");
+		        for (int i = words.length - 1; i >= 0; i--) 
+		        {
+		            if (words[i].equals("naga")|| words[i].equals("sandeep"))
+		            {
+		                for (int j = words[i].length() - 1; j >= 0; j--) 
+		                {
+		                    System.out.print(words[i].charAt(j));
+		                }
+		                
+		            } else {
+		                System.out.print(words[i]);
+		            }
 
-        // Append characters
-        stringBuilder.append(" WORLD");
+		           System.out.print(" ");
+		        }
 
-        // Insert characters at a specific position
-//        stringBuilder.insert(5," JAVA");
+		        
+		        
+		    }
+		}
+	
 
-        // Delete characters
-        stringBuilder.delete(2,6);
 
-        System.out.println(stringBuilder.toString());  // Output: Hello, Java
-    }
-}
+
+
+
+
+
